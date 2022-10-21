@@ -1,0 +1,98 @@
+https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/      find more details about git
+
+
+
+
+
+
+
+
+git --version. used to identify the version of git using
+git --config   used to configure things on git 
+global is a kind of keyword in case like configuring username or email for your git 
+eg: git --config global user "xxxxx"
+ls -la used to list all the hidden files 
+cd used to change directory eg: cd directoryname
+to return to previous directory u use cd ..
+
+Stagging Area:
+ It is a temporory area that we can add files to commit later on
+ you can stage files using add command eg: git add FileName
+ there are different versions available for adding like
+ git add --all this adds the files in the project to staging area
+ git add -A this is the shortcut for  git add --all
+ period(.) is a shortcut for the current directory in linux
+ After Stagging we commit them to git by using    git commit -m "message that you decide to give in order to understand the commit you did here for using it in the future"
+ Once we did this git keeps the commit history of that folder for us to revisit in case of need in future. 
+ Git also keeps these logs for us to track and can be done by using git log
+ To come out of git log use 'q' or 'z' or 'h' for help.
+
+Git Environments :
+ 1. Working (files look like what are after last commit)
+ 2. Stagging(this is a temporary location before new commit and use add command to stage a file before commiting it this is a queue up before deciding to commit changes)
+ 3. Commit ( Finally we commit the modified version ) 
+
+File States:
+  1. Traked Files (snapshots of the  files after commit)
+  2. Untracked File( a new file that is not commited)
+  
+  Traked Files :
+    1. Unmodified (files hasn't chnaged since the last modification)
+    2.modified ( files that are changed)
+    3. Staged (Files that are moved to staging enviroment)
+  
+We can veiw the status of files in git using git status
+
+Restoring files:
+we can restore files using git restore filename or 
+we can use git restore period(.) to restore current directory
+and git checkout . is the older version of git restore command.
+In order to restore a file from staging area we can use   git restore --staged Filename
+
+
+Renaming files:
+ we can rename a file using get mv filename newfilename
+
+
+
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+    
+
+ 
